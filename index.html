@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Meswa. ♡</strong>
+                        <p>
+                         Happy National Girlfriend Day!<br>
+                         I’m so grateful to have you as one of the biggest parts of my life.<p>
+                         I pray for you every single day,<br>that you achieve your dreams and conquer your nightmares.<p>
+                         I’ll always be here for you,<br> standing by your side through everything.<p>
+                         The words “I love you” don’t even begin to express<br> how deeply I feel for you.<p>
+                         The only thing that can explain or express it is you,<br>
+                         because you are the reason, the meaning, and the answer to it all.<p>
+                         I love you, now and forever more. ♡ ♡ ♡
+                         </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
